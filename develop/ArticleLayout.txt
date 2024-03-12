@@ -1,0 +1,35 @@
+Miguels Article "Start Hosting in Boston Like a Boss"
+
+Introduction:
+- Problem Statement / Motivation
+- RQs to examine in Article
+    Which neighbourhoods are best for hosting?
+    How does the price fluctuate throughout the year?
+    What is mostly correlated with being a Superhost?
+    What aspects of a listing influence the price the most?
+- data sets used
+
+1. Which neighbourhoods are best for hosting?
+    Price
+    Reviews Per Month
+    Location Rating
+    Conclusion
+
+2. How does the price fluctuate throughout the year?
+    Line Chart: Price and Availability over 1 year
+    Conclusion
+
+3. What is mostly correlated with being a Superhost?
+    Correlation heatmap: 5 most highly correlated features with being a Superhost
+    Conclusion
+
+4. What aspects of a listing influence the price the most?
+    Bayesian Ridge model / Regression: price = features
+    Feature Importance Chart
+        Top 5 features
+    Drill down on different feature groups
+    Conclusion
+
+To sum up:
+    Conclusion of chapter conclusions
+    Reference to Github analysis
