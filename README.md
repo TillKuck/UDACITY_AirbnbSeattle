@@ -7,9 +7,9 @@ Welcome to the enchanting city of Seattle, a place where the Space Needle graces
 3. What attributes influence the price per night the most?
 4. How do you become a Superhost?
 
-In order to answer these questions I utilized the Airbnb Seattle 2017 datasets containing the following data:\
+In order to answer these questions I utilized the Airbnb Seattle 2017 datasets containing the following data:
 
-**Calendar**: including listing id and the price and availability for that day
+**Calendar**: including listing id and the price and availability for that day  
 **Listings**: including full descriptions and average review score
 
 ### 1. Which neighborhoods are best for hosting?
