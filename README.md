@@ -6,7 +6,8 @@ Welcome to the enchanting city of Seattle, a place where the Space Needle graces
 2. How do prices and availability fluctuate throughout the year?
 3. What attributes influence the price per night the most?
 4. How do you become a Superhost?
-In order to answer these questions I utilized the Airbnb Seattle 2017 datasets containing the following data:
+
+In order to answer these questions I utilized the Airbnb Seattle 2017 datasets containing the following data:\
 
 **Calendar**: including listing id and the price and availability for that day
 **Listings**: including full descriptions and average review score
@@ -15,16 +16,21 @@ In order to answer these questions I utilized the Airbnb Seattle 2017 datasets c
 Understanding the unique characteristics of Seattle’s neighborhoods is not just about finding a place to host; it’s about discovering the heartbeat of the city and aligning your hosting strategy with the distinct preferences of potential guests. In our exploration, we will analyze essential factors such as price per night, reviews per month, and location rating, ensuring you make an informed decision that aligns with both your hosting goals and the desires of your future guests.
 
 #### Price
+![image](https://github.com/TillKuck/UDACITY_AirbnbSeattle/assets/85136272/f2deaa84-8d31-49e1-9711-eb31d332d8eb)
 
-Let’s start by looking at the average price a host can yield in each neighborhood. The following plot shows the top 20 boroughs in terms of price.
+Let’s start by looking at the average price a host can yield in each neighborhood. The above plot shows the top 20 boroughs in terms of price.
 
 Neighborhoods with highest prices: West Queen Anne (USD 188), Alki (USD 172), Pioneer Square (USD 169)
+
 #### Reviews per Month
+![image](https://github.com/TillKuck/UDACITY_AirbnbSeattle/assets/85136272/b562f972-e5bc-4d9c-8e07-a02a4d7e3133)
 
 Next, reviews per month signal how frequently guests stay in Airbnbs in each neighborhood. Above we can see the 20 most frequented areas.
 
 Most frequented Neighborhoods: Pike Market (3.5), Mid-Beacon Hill (3.0) and Whittier Heights (2.9)
+
 #### Location Rating
+![image](https://github.com/TillKuck/UDACITY_AirbnbSeattle/assets/85136272/7b8a409b-95b0-4f82-85bf-9c67b7a27ed5)
 
 Finally, location rating shows how popular each neighborhood is perceived. Above, you can see the top 20 neighborhoods.
 
@@ -33,7 +39,7 @@ Conclusion: After carefully considering price, reviews per month and location ra
 
 ### 2. How do prices and availability fluctuate throughout the year?
 Another interesting factor is the price and availability over the year. Usually, the travel industry underlies seasonal volatility, so it wouldn’t be surprising to see the same for Airbnb in Seattle.
-
+![image](https://github.com/TillKuck/UDACITY_AirbnbSeattle/assets/85136272/9be32e40-2d80-4dc6-9ca0-18ec314c8737)
 
 As we can see from the graph above, there is a clear seasonal trend in availability and price. The price per night increases from USD 120 in January to USD 160 in July, where it remains stable until September before it decreases to USD 135. Interestingly, there are weekly price spikes, with weekends having the highest prices.
 
@@ -43,7 +49,7 @@ Conclusion: Price-wise, peak season seems to be from June until September. Avail
 
 ### 3. What attributes influence the price per night the most?
 Next, let’s look at the features that have the highest influence on price. This analysis can be especially insightful as you directly see how your Dollars spend impact the price per night you can charge. To do that, I ran a Bayesian Ridge regression. According to the R² score, the data at hand explains 63.9% of the variance in price. Below you can see the importance of each feature in Dollars.
-
+![image](https://github.com/TillKuck/UDACITY_AirbnbSeattle/assets/85136272/ae261e9a-ab21-4dbe-9ebd-fa71fdd2f736)
 
 Feature Importance of Regression Analysis
 Looking over the top 5 features, we can see that neighborhood Pioneer Square (USD 43), neighborhood West Queen Anne (USD 41), neighborhood Pike Market (USD 34), entire home/apartment (USD 34) and the number of bathrooms (USD 32 each) impact the price per night the most.
@@ -54,7 +60,7 @@ Conclusion: If we could configure the perfect Airbnb, theoretically it would be 
 
 ### 4. How do you become a Superhost?
 Now, that we know what neighborhood, season and features are most relevant, it would also be interesting to know how to become a superhost as they are perceived to be the elite hosters on the platform and enjoy the highest reputation. So, let’s have a look at the correlation matrix below.
-
+![image](https://github.com/TillKuck/UDACITY_AirbnbSeattle/assets/85136272/81e89d53-9384-4e4a-98e1-28ac1c6e41a5)
 
 Correlation Matrix of listing features
 The first column shows the correlation associated with being a superhost. We can see that reviews per month have the highest correlation with a correlation of 0.27, followed by rating (0.25), number of reviews (0.25), cleanliness (0.24) and value (0.23).
